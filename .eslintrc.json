@@ -7,16 +7,23 @@
     "jquery": true,
     "worker": true
   },
-  "extends": ["standard", "plugin:prettier/recommended", "prettier", "prettier/standard"],
+  "ecmaFeatures": {
+    "modules": true
+  },
+
+  "extends": [
+    "eslint:recommended",
+    "standard",
+    "plugin:prettier/recommended",
+    "prettier",
+    "prettier/standard"
+  ],
   "plugins": ["prettier", "standard"],
 
-  "globals": {
-    "Atomics": "readonly",
-    "SharedArrayBuffer": "readonly"
-  },
   "parserOptions": {
     "ecmaVersion": 2018
   },
+
   "rules": {
     "prettier/prettier": [
       1,
