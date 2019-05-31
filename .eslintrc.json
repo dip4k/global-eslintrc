@@ -1,0 +1,43 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true,
+    "amd": true,
+    "jquery": true,
+    "worker": true
+  },
+  "extends": ["standard", "plugin:prettier/recommended", "prettier", "prettier/standard"],
+  "plugins": ["prettier", "standard"],
+
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018
+  },
+  "rules": {
+    "prettier/prettier": [
+      1,
+      { "singleQuote": true },
+      {
+        "usePrettierrc": false,
+        "fileInfoOptions": {
+          "withNodeModules": true
+        }
+      }
+    ],
+    "eqeqeq": 0,
+    "no-console": 1,
+    "no-debugger": 1,
+    "no-irregular-whitespace": 1,
+    "no-undef": 0,
+    "no-unused-vars": 1,
+    "no-confusing-arrow": "warn",
+    "no-unmodified-loop-condition": 1,
+    "camelcase": 0,
+    "no-redeclare": 1,
+    "handle-callback-err": 0
+  }
+}
